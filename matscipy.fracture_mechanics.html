@@ -25,6 +25,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -86,12 +87,12 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">matscipy.fracture_mechanics package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#matscipy-fracture-mechanics-clusters-module">matscipy.fracture_mechanics.clusters module</a></li>
+<li><a class="reference internal" href="#module-matscipy.fracture_mechanics.clusters">matscipy.fracture_mechanics.clusters module</a></li>
 <li><a class="reference internal" href="#matscipy-fracture-mechanics-crack-module">matscipy.fracture_mechanics.crack module</a></li>
-<li><a class="reference internal" href="#matscipy-fracture-mechanics-crackpathsel-module">matscipy.fracture_mechanics.crackpathsel module</a></li>
-<li><a class="reference internal" href="#matscipy-fracture-mechanics-energy-release-module">matscipy.fracture_mechanics.energy_release module</a></li>
+<li><a class="reference internal" href="#module-matscipy.fracture_mechanics.crackpathsel">matscipy.fracture_mechanics.crackpathsel module</a></li>
+<li><a class="reference internal" href="#module-matscipy.fracture_mechanics.energy_release">matscipy.fracture_mechanics.energy_release module</a></li>
 <li><a class="reference internal" href="#matscipy-fracture-mechanics-idealbrittlesolid-module">matscipy.fracture_mechanics.idealbrittlesolid module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-matscipy.fracture_mechanics">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -163,23 +164,178 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="matscipy-fracture-mechanics-clusters-module">
-<h2>matscipy.fracture_mechanics.clusters module<a class="headerlink" href="#matscipy-fracture-mechanics-clusters-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-matscipy.fracture_mechanics.clusters">
+<span id="matscipy-fracture-mechanics-clusters-module"></span><h2>matscipy.fracture_mechanics.clusters module<a class="headerlink" href="#module-matscipy.fracture_mechanics.clusters" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.clusters.cluster">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.clusters.</code><code class="sig-name descname">cluster</code><span class="sig-paren">(</span><em class="sig-param">el, a0, n, crack_surface=[1, 1, 0], crack_front=[0, 0, 1], lattice=None, shift=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.clusters.cluster" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.clusters.diamond">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.clusters.</code><code class="sig-name descname">diamond</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.clusters.diamond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.clusters.fcc">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.clusters.</code><code class="sig-name descname">fcc</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.clusters.fcc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.clusters.sc">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.clusters.</code><code class="sig-name descname">sc</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.clusters.sc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.clusters.set_groups">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.clusters.</code><code class="sig-name descname">set_groups</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">n</em>, <em class="sig-param">skin_x</em>, <em class="sig-param">skin_y</em>, <em class="sig-param">central_x=-0.5</em>, <em class="sig-param">central_y=-0.5</em>, <em class="sig-param">invert_central=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.clusters.set_groups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 <div class="section" id="matscipy-fracture-mechanics-crack-module">
 <h2>matscipy.fracture_mechanics.crack module<a class="headerlink" href="#matscipy-fracture-mechanics-crack-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="matscipy-fracture-mechanics-crackpathsel-module">
-<h2>matscipy.fracture_mechanics.crackpathsel module<a class="headerlink" href="#matscipy-fracture-mechanics-crackpathsel-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-matscipy.fracture_mechanics.crackpathsel">
+<span id="matscipy-fracture-mechanics-crackpathsel-module"></span><h2>matscipy.fracture_mechanics.crackpathsel module<a class="headerlink" href="#module-matscipy.fracture_mechanics.crackpathsel" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>function coordination(r, cutoff, transition_width)</dt><dd><dl class="simple">
+<dt>if r &gt; cutoff</dt><dd><p>f =  0.0
+df =  0.0</p>
+</dd>
+<dt>elseif r &gt; cutoff-transition_width</dt><dd><p>f = 0.5 * ( cos(pi*(r-cutoff+transition_width)/transition_width) + 1.0 )
+df = - 0.5 * pi * sin(pi*(r-cutoff+transition_width)/transition_width) / transition_width</p>
+</dd>
+<dt>else</dt><dd><p>f = 1.0
+df = 0.0</p>
+</dd>
+</dl>
+<p>end
+f</p>
+</dd>
+</dl>
+<p>end</p>
+<dl>
+<dt>function dcoordination(r, cutoff, transition_width)</dt><dd><dl class="simple">
+<dt>if r &gt; cutoff</dt><dd><p>df =  0.0</p>
+</dd>
+<dt>elseif r &gt; cutoff-transition_width</dt><dd><p>df = - 0.5 * pi * sin(pi*(r-cutoff+transition_width)/transition_width) / transition_width</p>
+</dd>
+<dt>else</dt><dd><p>df = 0.0</p>
+</dd>
+</dl>
+<p>end
+df</p>
+</dd>
+</dl>
+<p>end</p>
+<dl>
+<dt>function energy(pos, neighb_j, neighb_rij, cutoff, transition_width, epsilon)</dt><dd><p>N = size(pos, 2)</p>
+<p>n = zeros(Float64, N)
+energies = zeros(Float64, N)</p>
+<dl class="simple">
+<dt>for i = 1:N</dt><dd><dl class="simple">
+<dt>for (m, j) in enumerate(neighb_j[i])</dt><dd><p>r_ij = neighb_rij[i][m]
+#&#64;printf(“i %d j %d r_ij %f</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>“, i, j, r_ij)</dt><dd><blockquote>
+<div><blockquote>
+<div><p>r_ij &gt; cutoff &amp;&amp; continue</p>
+<p>f_ij = coordination(r_ij, cutoff, transition_width)
+n[i] += f_ij</p>
+</div></blockquote>
+<p>end
+energies[i] += (n[i] - 3)^2</p>
+</div></blockquote>
+<p>end</p>
+<dl>
+<dt>for i = 1:N</dt><dd><p>sum_B_ij = 0.0</p>
+<dl>
+<dt>for (m, j) in enumerate(neighb_j[i])</dt><dd><p>r_ij = neighb_rij[i][m]
+r_ij &gt; cutoff &amp;&amp; continue</p>
+<p>f_ij = coordination(r_ij, cutoff, transition_width)
+B_ij = (n[j] - 3.0)^2*f_ij
+sum_B_ij += B_ij</p>
+</dd>
+</dl>
+<p>end</p>
+<p>Eb_i = epsilon*(n[i] - 3.0)^2*sum_B_ij
+energies[i] += Eb_i</p>
+</dd>
+</dl>
+<p>end</p>
+<p>E = sum(energies)
+return (E, energies, n)</p>
+</dd>
+</dl>
+<p>end</p>
+<dl>
+<dt>function force(pos, neighb_j, neighb_rij, cutoff, transition_width, epsilon, dx)</dt><dd><p>N = size(pos, 2)
+f = zeros(Float64, (3, N))
+p = zeros(Float64, (3, N))</p>
+<p>p[:, :] = pos
+for i = 1:N</p>
+<blockquote>
+<div><dl class="simple">
+<dt>for j = 1:3</dt><dd><p>p[j, i] += dx
+ep, local_e_p, n_p = energy(p, neighb_j, neighb_rij, cutoff, transition_width, epsilon)
+p[j, i] -= 2dx
+em, local_e_m, n_m = energy(p, neighb_j, neighb_rij, cutoff, transition_width, epsilon)
+f[j, i] = -(ep - em)/(2dx)
+p[j, i] += dx</p>
+</dd>
+</dl>
+<p>end</p>
+</div></blockquote>
+<p>end
+f</p>
+</dd>
+</dl>
+<p>end</p>
 </div>
-<div class="section" id="matscipy-fracture-mechanics-energy-release-module">
-<h2>matscipy.fracture_mechanics.energy_release module<a class="headerlink" href="#matscipy-fracture-mechanics-energy-release-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-matscipy.fracture_mechanics.energy_release">
+<span id="matscipy-fracture-mechanics-energy-release-module"></span><h2>matscipy.fracture_mechanics.energy_release module<a class="headerlink" href="#module-matscipy.fracture_mechanics.energy_release" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="matscipy.fracture_mechanics.energy_release.J_integral">
+<code class="sig-prename descclassname">matscipy.fracture_mechanics.energy_release.</code><code class="sig-name descname">J_integral</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">deformation_gradient</em>, <em class="sig-param">virial</em>, <em class="sig-param">epot</em>, <em class="sig-param">e0</em>, <em class="sig-param">tip_x</em>, <em class="sig-param">tip_y</em>, <em class="sig-param">r1</em>, <em class="sig-param">r2</em>, <em class="sig-param">mask=None</em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.fracture_mechanics.energy_release.J_integral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the energy release rate from the J-integral. Converts contour
+integral into a domain integral.
+See: Li, Shih, Needleman, Eng. Fract. Mech. 21, 405 (1985);
+Jin, Yuan, J. Nanosci. Nanotech. 5, 2099 (2005)
+Domain function is currently fixed: q(r) = (r-r1)/(r2-r1)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>ase.Atoms</em>) – Relaxed atomic configuration of the crack.</p></li>
+<li><p><strong>deformation_gradient</strong> (<em>array_like</em>) – len(a) x 3x3 array of atomic deformation gradients.</p></li>
+<li><p><strong>virial</strong> (<em>array_like</em>) – len(a) x 3x3 array of atomic virials.</p></li>
+<li><p><strong>epot</strong> (<em>float</em>) – Potential energy per atom of the cracked configuration.</p></li>
+<li><p><strong>e0</strong> (<em>float</em>) – Reference energy (cohesive energy per atom of the bulk crystal at
+equilibrium).</p></li>
+<li><p><strong>tip_y</strong> (<em>tip_x</em><em>,</em>) – Position of the crack tip.</p></li>
+<li><p><strong>r2</strong> (<em>r1</em><em>,</em>) – Volume integration is carried out in region at a distance between r1
+and r2 from the crack tip.</p></li>
+<li><p><strong>mask</strong> (<em>array_like</em>) – Include only a subset of all atoms into J-integral computation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>J</strong> – Value of the J-integral.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <div class="section" id="matscipy-fracture-mechanics-idealbrittlesolid-module">
 <h2>matscipy.fracture_mechanics.idealbrittlesolid module<a class="headerlink" href="#matscipy-fracture-mechanics-idealbrittlesolid-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-matscipy.fracture_mechanics">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-matscipy.fracture_mechanics" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
