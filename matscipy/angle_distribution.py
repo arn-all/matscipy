@@ -27,7 +27,7 @@ import _matscipy
 
 def angle_distribution(i, j, dr, nbins, *args):
     """
-    Compute a bond angle distribution from a neighbour list.
+    Compute a bond angle distribution from a neighbour list. foo
 
     Parameters
     ----------
