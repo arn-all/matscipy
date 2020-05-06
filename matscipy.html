@@ -191,6 +191,13 @@
 <li class="toctree-l2"><a class="reference internal" href="matscipy.fracture_mechanics.html#module-matscipy.fracture_mechanics">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="matscipy.calculators.html">matscipy.calculators package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matscipy.calculators.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matscipy.calculators.html#module-matscipy.calculators.eam.calculator">matscipy.calculators.eam.calculator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matscipy.calculators.html#module-matscipy.calculators.eam">matscipy.calculators.eam module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matscipy.calculators.html#module-matscipy.calculators">Module contents</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -719,6 +726,36 @@ given.</p></li>
 </div>
 <div class="section" id="module-matscipy.neighbours">
 <span id="matscipy-neighbours-module"></span><h2>matscipy.neighbours module<a class="headerlink" href="#module-matscipy.neighbours" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="matscipy.neighbours.find_indices_of_reversed_pairs">
+<code class="sig-prename descclassname">matscipy.neighbours.</code><code class="sig-name descname">find_indices_of_reversed_pairs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i_n</span></em>, <em class="sig-param"><span class="n">j_n</span></em>, <em class="sig-param"><span class="n">abs_dr_n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.neighbours.find_indices_of_reversed_pairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find neighbor list indices where reversed pairs are stored</p>
+<p>Given list of identifiers of neighbor atoms <cite>i_n</cite> and <cite>j_n</cite>,
+determines the list of indices <cite>reverse</cite> into the neighbor list
+where each pair is reversed, i.e. <cite>i_n[reverse[n]]=j_n[n]</cite> and
+<cite>j_n[reverse[n]]=i_n[n]</cite> for each index <cite>n</cite> in the neighbor list</p>
+<p>In the case of small periodic systems, one needs to be careful, because
+the same pair may appear more than one time, with different pair
+distances. Therefore, the pair distance must be taken into account.</p>
+<p>We assume that there is in fact one reversed pair for every pair.
+However, we do not check this assumption in order to avoid overhead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i_n</strong> (<em>array_like</em>) – array of atom identifiers</p></li>
+<li><p><strong>j_n</strong> (<em>array_like</em>) – array of atom identifiers</p></li>
+<li><p><strong>abs_dr_n</strong> (<em>array_like</em>) – pair distances</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>reverse</strong> – array of indices into i_n and j_n</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py function">
 <dt id="matscipy.neighbours.mic">
 <code class="sig-prename descclassname">matscipy.neighbours.</code><code class="sig-name descname">mic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dr</span></em>, <em class="sig-param"><span class="n">cell</span></em>, <em class="sig-param"><span class="n">pbc</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#matscipy.neighbours.mic" title="Permalink to this definition">¶</a></dt>
